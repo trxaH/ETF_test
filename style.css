@@ -60,9 +60,34 @@ body{
   border-bottom: 3px solid var(--ter);
 }
 
-.toastBtn img{
+.luggageBtn img{
   margin-top: 8px;
   max-width: 250px;
+}
+
+#passport {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin: 20px auto;
+  transform: translateY(-500px);
+  transition: transform 1s ease;
+}
+
+#passport img {
+  width: 200%;
+  height: 200%;
+}
+
+#stamp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .image{
@@ -71,9 +96,9 @@ body{
   transition: 0.3s;
 }
 
-.image:hover{
+/* .image:hover{
   opacity: 0;
-}
+} */
 
 #footer{
   width: 100%;
