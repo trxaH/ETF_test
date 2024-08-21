@@ -1,31 +1,33 @@
-document.getElementById("startBtn").addEventListener("click", function(){
-  let passport = document.getElementById("passport");
-  let stamp = document.getElementById("stamp");
+document.addEventListener("DOMContentLoaded", function () {
+  let startBtn = document.getElementById("startBtn");
+  if (startBtn) {
+    startBtn.addEventListener("click", function(){
+      let passport = document.getElementById("passport");
+      let stamp = document.getElementById("stamp");
 
-  // slide passport down
-  passport.style.opacity = "1";
-  passport.style.transform = "translateY(0)";
+      // slide passport down
+      passport.style.opacity = "1";
+      passport.style.transform = "translateY(0)";
 
-  //after 1 second, show stamp
-  setTimeout(function() {
-    stamp.style.opacity = "1";
-  }, 1000);
+      // after 1 second, show stamp
+      setTimeout(function() {
+        stamp.style.opacity = "1";
+      }, 1000);
 
-  //after 2 seconds, slide passport back up
-  setTimeout(function() {
-    passport.style.transform = "translateY(-500PX)";
-  }, 2000);
+      // after 2 seconds, slide passport back up
+      setTimeout(function() {
+        passport.style.transform = "translateY(-500px)";
+      }, 2000);
 
-  //after 3 seconds, show question and options
-  setTimeout(function() {
-    loadNewContent();
-  }, 3000);
-
-
+      // after 3 seconds, show question and options
+      setTimeout(function() {
+        loadNewContent();
+      }, 3000);
+    });
+  }
 });
 
 function loadNewContent(){
-  
   window.location.href = 'travel.html';
 }
 

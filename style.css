@@ -24,8 +24,9 @@ body{
 }
 
 #welcome{
-  text-align: center;
+  /* text-align: center; */
   margin-top: 5%;
+  padding-left: 40%;
 }
 
 #welcome p{
